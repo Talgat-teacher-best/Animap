@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+	{% block content %}
+	<style>
+	#shrift {
+    font-family: Arial, sans-serif;
+    color: #4B0082;
+    position: absolute;
+    font-size: 77px;
+    font-weight: bold;
+    top: 10%;
+    left: 30%;
+    }
+    #to {
+    font-family: Arial, sans-serif;
+    color: #4B0082;
+    position: absolute;
+    font-size: 77px;
+    font-weight: bold;
+    top: 20%;
+    left: 40%;
+    }
+    #shrift2 {
+    font-family: Arial, sans-serif;
+    color: #0000FF;
+    position: absolute;
+    font-size: 110px;
+    font-weight: bold;
+    top: 30%;
+    left: 35%;
+    }
+    #button{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    }
+    #button2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    }
+
+    #copy{
+    position: absolute;
+    top: 90%;
+    left: 70%;
+    font-size: 10px
+    }
+	</style>
+	<div id = "shrift"><p>WELCOME</p></div>
+	<div id="to"><p>TO</p></div>>
+	<div id = "shrift2"><p>ANIMAP</p></div>
+	<div id="button">
+	<form action="{% url 'Menu' %}">
+	<button type="submit" class="btn btn-primary btn-lg" >Дальше</button>
+    </form>
+    </div>
+    <div id="button2">
+    <form action="{% url 'Instruction' %}">
+	<button type="submit" class="btn btn-secondary btn-lg">Инструкция</button>
+    </form>
+	</div>
+	<div id="copy">
+		<p>©Права этого сайта защищены компанией ADLETCHORT</p>
+	</div>
+	{% endblock %}
+
