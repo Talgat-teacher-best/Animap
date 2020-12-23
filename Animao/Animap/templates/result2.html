@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Вы искали : {{ query}} </h1>
+<a href="{% url 'SearchManga' %}">Хочу типо назад</a>
+{% for results in result%}
+<a href="{% url 'Manga_Detail' %}">{{ results.title }}</a>
+<h1>{{ results.author }}</h1>
+{% endfor %}
+{% endblock %}

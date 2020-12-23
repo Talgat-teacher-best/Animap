@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Игра: Угадай Аниме по персонажу</h1>
+<h1>{{ title }}</h1>
+<form action="{% url 'Game' %}" method="get">
+  <input type="text" name="answer" placeholder="Название Аниму">
+  <button type="submit">АТВЕЧАЮ</button>
+</form>
+
+<h3>{{ msg }}</h3>
+<h2> очки {{ score }}</h2>
+{% endblock %}

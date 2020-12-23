@@ -1,0 +1,10 @@
+<!-- templates/search_anime.html -->
+{% extends "base.html" %}
+{% block content %}
+<h1 align="center">Ищещь Аниму?</h1>
+<form>
+   <p><input type="search" name="q" placeholder="ФуУУ! Анимеонли"> 
+   <input type="submit" value="Найти"></p>
+</form>
+<a href="{% url 'index2' %}">Хочу типо назад</a>
+{% endblock %}

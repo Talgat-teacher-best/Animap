@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% for informations in information %}
+  <h1>Title: {{ informations.title }}</h1>
+
+  <p><strong>Author:</strong> <a href="">{{ information.author }}</a> 
+  <p><strong>Genre:</strong> {{ information.genre }}</p>
+{% endfor %}  
+{% endblock %}

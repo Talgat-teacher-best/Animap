@@ -14,7 +14,7 @@
     <a class="nav-link active" aria-current="page" href="{% url 'index2' %}">Главное</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="">Игры</a>
+    <a class="nav-link" href="{% url 'Game' %}">Игры</a>
   </li>
    {% if user.is_authenticated %}
   <li class="nav-item">
@@ -26,6 +26,9 @@
    {% else %}
    <li class="nav-item">
     <a class="nav-link" href="{% url 'login' %}">Войти</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="{% url 'login' %}">Регистрация</a>
   </li>
     {% endif %} 
   <li class="nav-item">
